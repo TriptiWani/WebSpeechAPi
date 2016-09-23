@@ -33,6 +33,7 @@ recognition.onresult = function(event) {
   diagnostic.textContent = 'Result received: ' + color + '.';
   bg.style.backgroundColor = color;
   console.log('event' , event);
+  console.log('result', event.results[0][0]);
   console.log('Confidence: ' + event.results[0][0].confidence);
 }
 
